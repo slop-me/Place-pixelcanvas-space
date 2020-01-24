@@ -455,7 +455,7 @@ UserSchema.statics.isTOSAgreementCurrentlyRequired = function() {
 }
 
 UserSchema.methods.canPlaceCustomColours = function() {
-    return this.admin || this.moderator;
+    return this.admin || this.moderator || this.RGB;
 }
 
 UserSchema.methods.canPlaceColour = function(hex, app) {
@@ -481,6 +481,7 @@ UserSchema.methods.getBadges = function(app) {
     else if(this.deactivated) badges.push({ text: "Deactivated", style: "danger", title: "This user chose to deactivate their account." });
     if(this.admin) badges.push({ text: "Admin", style: "warning", inlineBefore: true, title: "This user is an administrator." });
     else if(this.moderator) badges.push({ text: "Moderator", shortText: "Mod", style: "warning", inlineBefore: true, title: "This user is a moderator." });
+    if(this.RGB) badges.push({ text: "RGB", style: "warning", inlineBefore: true, title: "This user can place all RGB colors!" });
     return badges;
 }
 
