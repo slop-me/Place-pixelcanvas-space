@@ -46,6 +46,11 @@ var UserSchema = new Schema({
         type: String,
         required: false
     },
+    RGB: {
+        type: Boolean,
+        required: true,
+        default: false
+    },
     admin: {
         type: Boolean,
         required: true,
