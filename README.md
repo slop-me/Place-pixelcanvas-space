@@ -91,8 +91,8 @@ Check our currently open issues for an idea on what to work on!
 * Ex [Ayden Panhuyzen](https://ayden.dev) - Core Developer
 * Ex [Jamie Bishop](https://twitter.com/jamiebishop123) - Core Developer
 * Ex [Eric Rabil](https://twitter.com/ericrabil) - Core Developer
-* [slop_me] - Core Developer
-* [alex1331xela] - Core Developer
+* slop_me - Core Developer
+* alex1331xela - Core Developer
 
 Also see the list of [contributors](https://www.github.com/dynastic/place/contributors) who generously donated their time and skills to this project to to make it what it is.
 
