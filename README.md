@@ -105,3 +105,4 @@ Dynastic Place is licensed under a [modified version of the APGL-3.0 license](ht
 Thank you to:
 * Reddit, for the [original Place](https://reddit.com/r/place).
 * Our community for making it worthwhile.
+* Orginal devs over at [Dynastic team](https://dynastic.co)
