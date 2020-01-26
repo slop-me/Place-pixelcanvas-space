@@ -1,6 +1,6 @@
 # Dynastic Place
 
-An open-source [r/place](https://reddit.com/r/place) alternative, made by [Dynastic](https://dynastic.co). Want to chat? Join our [Discord server](https://discord.gg/CgC8FTg).
+An open-source [r/place](https://reddit.com/r/place) alternative, made by [Dynastic](https://dynastic.co).
 
 Maintained by [pixelcanvas space team](http://pixelcanvas.space). Want to chat? Join our [Discord server](https://discord.gg/CgC8FTg).
 
