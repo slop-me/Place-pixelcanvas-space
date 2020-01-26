@@ -18,7 +18,7 @@
 9. As previously discussed in #announcements, due to attacks on our website by other Place clones, the discussion of them is strictly prohibited.
 
 10. Don't spam the chat with useless text or multiple messages that could have been sent in one. This may result in a ban.
-**Last updated:** date of modification
+**Last updated:** 26/1/2020
 
 ---
 
