@@ -1,9 +1,7 @@
 # Dynastic Place
 
 An open-source [r/place](https://reddit.com/r/place) alternative, made by [Dynastic](https://dynastic.co). Want to chat? Join our [Discord server](https://discord.gg/CgC8FTg).
-
-## The state of this project
-This project is no longer actively maintained and may not be the best choice for a public service. We welcome contributions and new maintainers, but it can unfortunately no longer be a priority for us. In general, it uses some misguided techniques from formerly-beginner developers and portions may be somewhat hard to maintain due to this (however, any help fixing that are super appreciated).
+Maintained by [pixelcanvas space team](http://pixelcanvas.space). Want to chat? Join our [Discord server](https://discord.gg/CgC8FTg).
 
 It's been really cool to see people use this project, whether for their artful creations on [our copy, canvas.place](https://canvas.place), or to run their own special-purpose instances (for example, we heard of some Microsoft interns using it, which was pretty cool) and we're proud of the work everyone put into it.
 
