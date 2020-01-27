@@ -19,7 +19,3 @@
 
 10. Don't spam the chat with useless text or multiple messages that could have been sent in one. This may result in a ban.
 **Last updated:** 26/1/2020
-
----
-
-Give your users some rules to follow. If this is enabled (by the existence of `community_guidelines.md`), users must check a box at sign up and they will see a link to this in the footer.
