@@ -92,18 +92,27 @@ html(lang="en")
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href="https://www.dynastic.co", style="margin-right: -5px")
             img(src="https://assets.dynastic.co/brand/img/icon-46.png", height="20")
-          a.navbar-brand(href="/")
+          a.navbar-brand(href="https://pixelcanvas.space/", style="margin-right: -5px")
+          a.navbar-brand(href="https://pixelcanvas.space/")
             | #{config.siteName}
             if config.debug
               span.label.label-danger.beta-label debug
         .collapse.navbar-collapse#navbar-collapse
           ul.nav.navbar-nav
             +getViewExtensions("nav_left")
-            +renderNavItem("Home", "/", "home")
-            +getViewExtensions("nav_inside")
+            +renderNavItem("Home", "https://pixelcanvas.space/", "home")
             li.dropdown
+              a.dropdown-toggle(data-toggle="dropdown", href="#", role="button", aria-haspopup="true", aria-expanded="false")
+                i.fa.fa-link.fa-fw
+                .
+                  Source #[span.caret]
+              ul.dropdown-menu
+                +renderNavItem("canvas.place (Old Site)", "https://canvas.place", "mouse-pointer")
+                +renderNavItem("Source Code - pixelcanvas.space", "https://www.github.com/slop-me/place", "github")
+                +renderNavItem("Source Code - canvas.place", "https://www.github.com/dynastic/place", "github")
+            +getViewExtensions("nav_inside")
+            //li.dropdown
               a.dropdown-toggle(data-toggle="dropdown", href="#", role="button", aria-haspopup="true", aria-expanded="false")
                 i.fa.fa-users.fa-fw
                 .
@@ -129,14 +138,21 @@ html(lang="en")
                 ul.dropdown-menu
                   +renderNavItem("Your Profile", "/account", "user-circle-o")
                   +renderNavItem("What's New", "javascript:void(0)", "list")
-                  +renderNavItem("Rules", "/guidelines", "handshake-o")
+                  li.divider(role="separator")
+                  +renderNavItem("Rules", "/rules", "handshake-o")
+                  +renderNavItem("Terms of Service", "/tos", "book")
+                  +renderNavItem("Privacy Policy", "/privacy", "lock")
                   li.divider(role="separator")
                   +renderNavItem("Sign Out", `/signout?redirectURL=${redirectURLPart}`, "sign-out")
             else
               li#nav-auth-link
-                a.btn.btn-sm.btn-nav-auth-link(href=(path == "/" ? "javascript:void(0)" : `/#signup&redirectURL=${redirectURLPart}`), data-place-trigger="openAuthDialog") Get Started
+                a.btn.btn-sm.btn-nav-auth-link(data-place-trigger="openSignUpDialog", href="javascript:void(0)") Sign up
+              a.navbar-brand()
+              li#nav-auth-link
+                a.btn.btn-sm.btn-nav-auth-link(data-place-trigger="openSignInDialog", href="javascript:void(0)") Sign in
+              a.navbar-brand()
             if needsHelp
-              +renderNavItem("Help", "javascript:void(0)", "question-circle", false)
+              +renderNavItem("Help", "javascript:void(0)", "question-circle", true)
             +getViewExtensions("nav_user_right")
     main
       // Content-insertion point
@@ -159,13 +175,14 @@ html(lang="en")
     footer.footer
         .container.footer-contents
             div
-                p.text-muted &copy; Dynastic Development
+                //p.text-muted &copy; pixelcanvas.space
+                p.text-muted Thanks for using pixelcanvas.space!
             .right
                 p: ul.footer-links
+                    if hasCommunityGuidelines
+                        li: a(href="/rules") Rules
                     if hasTOS
                         li: a(href="/tos") Terms of Service
-                    if hasCommunityGuidelines
-                        li: a(href="/guidelines") Rules
                     if hasPP
                         li: a(href="/privacy") Privacy Policy
         +getViewExtensions("footer")
