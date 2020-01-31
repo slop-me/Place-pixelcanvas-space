@@ -2,7 +2,7 @@
 
 An open-source [r/place](https://reddit.com/r/place) alternative, made by [Dynastic](https://dynastic.co).
 
-Maintained by [pixelcanvas space team](http://pixelcanvas.space). Want to chat? Join our [Discord server](https://discord.gg/CgC8FTg).
+Maintained by the [pixelcanvas.space team](http://pixelcanvas.space). Want to chat? Join our [Discord server](https://discord.gg/CgC8FTg).
 
 It's been really cool to see people use this project, whether for their artful creations on [our copy, canvas.place](https://canvas.place), or to run their own special-purpose instances (for example, we heard of some Microsoft interns using it, which was pretty cool) and we're proud of the work everyone put into it.
 
@@ -24,7 +24,7 @@ These instructions will help you get an instance of the project up and running o
 1. Copy `config/config.example.js` to `config/config.js`.
 2. Configure your Place server as you see fit by modifying the values
    > **Important:** You must set a strong secret in the secret field to protect against cookie-spoofing attacks that could result in attacks on your site!
-3. Run `yarn add mongoose@4.4.20` to install the dependencies. Mongoose V5 and above breaks.
+3. Run `yarn add mongoose@4.4.20`, and then `yarn install` to install the dependencies (mongoose v5 and above causes errors).
 4. Finally, run `node app.js` to start the server.
 
 ### Production Deployment
@@ -92,7 +92,7 @@ Check our currently open issues for an idea on what to work on!
 * Ex [Jamie Bishop](https://twitter.com/jamiebishop123) - Core Developer
 * Ex [Eric Rabil](https://twitter.com/ericrabil) - Core Developer
 * slop_me - Core Developer
-* alex1331xela - Core Developer
+* [alex1331xela](https://twitter.com/alex1331xela) - Core Developer
 
 Also see the list of [contributors](https://www.github.com/dynastic/place/contributors) who generously donated their time and skills to this project to to make it what it is.
 
@@ -105,4 +105,4 @@ Dynastic Place is licensed under a [modified version of the APGL-3.0 license](ht
 Thank you to:
 * Reddit, for the [original Place](https://reddit.com/r/place).
 * Our community for making it worthwhile.
-* Orginal devs over at [Dynastic team](https://dynastic.co)
+* Orginal devs over at [Dynastic Development](https://dynastic.co)
